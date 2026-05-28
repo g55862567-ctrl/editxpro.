@@ -1,4 +1,5 @@
 import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import '../styles.css'
 
 export const Route = createRootRoute({
@@ -32,6 +33,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <body>
         {children}
         <Scripts />
+        <SpeedInsights />
       </body>
     </html>
   )
